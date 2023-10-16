@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Ensure a minimum height to prevent clipping at the bottom */
+        }
+        .bg-cyan-500 {
+            background-color: #00bcd4; /* A cyan color */
+        }
+        .bg-cyan-600 {
+            background-color: #0097a7; /* A slightly darker shade of cyan */
+        }
+    </style>
+</head>
+<body class="bg-[url('/background2.svg')] bg-no-repeat bg-cover bg-fixed font-sans flex justify-center items-center h-screen">
+    <div class="flex h-screen justify-center items-center">
+        <div class="bg-white p-8 max-w-xl mx-auto rounded-lg shadow-lg my-20 mx-50">
+            <div class="text-center">
+                <!-- Logo of the medical clinic-->
+                <img src="app_logo.png" alt="Medical Clinic Logo" class="w-32 h-32 mx-auto mb-6">
+                <!-- Message -->
+                <p class="text-3xl font-semibold text-cyan-600 mb-6">Follow-up Checkup Schedule</p>
+                <p class="text-center text-black font-semibold mt-6">
+                    Hi [name]!
+                </p>
+                <p class="text-center text-black mt-4">
+                    Here's your schedule for your follow up check-up with Dr. [name]:
+                </p>
+                <p class="text-center text-s font-semibold text-black mt-4">
+                    Date: [appointment_date] Time: [appointment_time]
+                </p>
+                <p class="text-center text-s font-semibold text-black mt-4">
+                    Appointment Type: [appointment_type]
+                </p>
+                <p class="text-center text-black mt-4">
+                    You may view more details about this by clicking the button below.
+                </p>
+                <!-- Button with hover animation -->
+                <button class="bg-cyan-500 hover:bg-cyan-600 transition duration-150 ease-in-out text-white font-semibold rounded-full px-6 py-3 mt-6">VIEW APPOINTMENT DETAILS</button>
+            </div>
+            <!-- Alternative link -->
+            <p class="text-center text-black mt-6">
+                If the button doesn't work, you can <a href="#" target="_blank" class="text-cyan-600 hover:underline">click here</a> to continue.
+            </p>
+            <!-- Closing message before separator -->
+            <p class="text-black text-center mt-6">Regards, SRMC</p>
+            <!-- Thin separator -->
+            <div class="border-t border-cyan-600 my-6"></div>
+            <!-- Contact us -->
+            <footer class="text-center text-cyan-600 mt-1">
+                <p>Contact us:</p>
+                <p class="mt-3">
+                    <a href="https://www.facebook.com/StoRosarioMultispecialtyClinic" target="_blank" class="text-cyan-600 hover:text-cyan-500 mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="tel:09762053917" target="_blank" class="text-cyan-600 hover:text-cyan-500 mx-2"><i class="fas fa-phone fa-2x"></i></a>
+                    <a href="mailto:storosariomc@gmail.com" target="_blank" class="text-cyan-600 hover:text-cyan-500 mx-2"><i class="fa fa-envelope fa-2x"></i></a>
+                </p>
+                <!-- System-generated message -->
+                <p class="text-xs text-gray-600 mt-5 text-center">This is a system-generated message. Please do not reply.</p>
+                <p class="mt-5 text-xs">&copy; 2023 SRMC. All Rights Reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
